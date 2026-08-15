@@ -18,7 +18,7 @@ export default function HomePage() {
           alt="Barcelona skyline glowing at golden hour"
           fill
           priority
-          className="object-cover object-top"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-black/45" />
 
@@ -86,7 +86,7 @@ export default function HomePage() {
             small-group, both are unforgettable.
           </p>
         </div>
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-3">
           {tours.map((tour) => (
             <TourCard key={tour.slug} tour={tour} />
           ))}
